@@ -99,17 +99,3 @@ INSERT INTO Transaction VALUES('','123456789Z', '2', '2016-02-15', '1', 'Transfe
 INSERT INTO Transaction VALUES('','111111111B', '3', '2016-02-20', '3', 'Food for seminar', 'Carrie Long', 'CC','1324754344', '40576', '54.32');
 INSERT INTO Transaction VALUES('','222222222C', '4', '2016-01-12', '4', 'New peripherals', 'Himself', 'PO','N/A', '40604', '324.54');
 INSERT INTO Transaction VALUES('','333333333D', '5', '2016-03-03', '5', 'New laptops', 'Carrie Long', 'CC','8877665544', '40592', '1045.65');
-
-
-/*--first query for milestone 3
---Displays all Transactions ordered by the date purchased in ascending order(shows newest date last)
-SELECT * FROM Transaction ORDER BY DateOfPurchase ASC;
-
---second query for milestone 3
---Displays the price and account used with the transaction with the highest Price
-SELECT AccountNumber, Price FROM Transaction WHERE Price = (SELECT MAX(Price) FROM Transaction);
-
---third query for milestone 3
---Displays all Account numbers associated with each vendor name
-SELECT AccountNumber, VendorName FROM Transaction NATURAL JOIN Vendor;
-*/
